@@ -59,7 +59,7 @@ textarea {
 }
 
 .body-wrapper {
-	padding: 2.275em;
+	padding: 3%;
 	margin: 10%;
 	margin-top: 3%;
 	background-color: rgba(27, 25, 25, 0.904);
@@ -132,15 +132,42 @@ textarea {
 	color: var(--mainText);
 }
 
-/* Turn off parallax scrolling for all tablets and phones. Increase/decrease the pixels if needed */
-@media only screen and (max-device-width: 1366px) {
-	.parallax {
-		background-attachment: scroll;
-	}
-}
-
 @media screen and (max-width: 1200px) {
 	.container {
 		width: 95%;
+	}
+	.body-wrapper {
+		padding: 2.275em;
+		margin: 10%;
+		margin-top: 3%;
+		background-color: rgba(27, 25, 25, 0.904);
+	}
+}
+
+@media screen and (max-width: 850px) {
+	body {
+		min-width: 350px;
+	}
+
+	.container {
+		width: 95%;
+	}
+	.section-wrapper h1 {
+		font-size: 30px;
+		font-weight: 400;
+		margin-bottom: 1%;
+	}
+
+	.section-wrapper span {
+		font-size: 17px;
+		color: var(--secondaryText);
+		padding-right: 0.5em;
+	}
+	.skill-set-wrapper li {
+		font-size: 13px;
+	}
+
+	.contact-wrapper h3 {
+		font-size: 14px;
 	}
 }
